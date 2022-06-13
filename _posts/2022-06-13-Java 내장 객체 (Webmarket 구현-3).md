@@ -1,5 +1,4 @@
 ---
-layout: single
 title: "Java 내장 객체 (Webmarket 구현-3)" #글 제목
 categories: Java #글이 담길 폴더(대목차)
 tag: [Bean, Jsp] #태그 넣어주기
