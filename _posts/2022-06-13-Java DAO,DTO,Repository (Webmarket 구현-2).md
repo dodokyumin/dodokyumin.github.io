@@ -1,14 +1,29 @@
+# Java DAO,DTO,Repository
+
+
+
 **순서** 
 
 1. 모델객체 만들고
-2.  **기능제공하는 레파지토리 만들고**
+
+2. **기능제공하는 레파지토리 만들고**
+
 3. 화면에 뿌린다. (jsp)
+
+   
+
+   <details>
+     <summary style="font-Weight : bold; font-size : 15px; color : #E43914;" >실습 목표</summary>
+     <div>
+       <img src="../images/2022-06-13-Java 클래스를 정의했을 때 할 일/image-20220613093044400.png"/>
+     </div>
+   </details>
+   
+   
 
 ------
 
 
-
-# Java DAO,DTO,Repository
 
 dto data transfer object
 
@@ -129,6 +144,16 @@ sort(products);
 
 
 
+### ❓ 의문점
+
+1. List\<product> products = new LinkedList<>();
+
+   List\<product> products = new ArrayList<>();
+
+   여기서 앞에는 List, 뒤에는 LinkedList 어쩔때는 뒤가 ArrayList, 앞이 List.
+
+   무슨 차이일까?
+
 
 
 
@@ -142,3 +167,8 @@ sort(products);
 https://www.geeksforgeeks.org/types-of-linked-list/
 
 https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=justkukaro&logNo=220396540585
+
+
+
+
+
