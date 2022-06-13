@@ -18,8 +18,8 @@ tag: [Bean, Jsp] #태그 넣어주기
    <details>
      <summary style="font-Weight : bold; font-size : 15px; color : #E43914;" >실습 목표</summary>
      <div>
-       <img src="images/2022-06-13-Java 내장 객체 (Webmarket 구현-3)/image-20220613180304121.png"/>
-       <img src="images/2022-06-13-Java 내장 객체 (Webmarket 구현-3)/image-20220613180320544.png"/>
+       <img src="../images/2022-06-13-Java 내장 객체 (Webmarket 구현-3)/image-20220613180304121.png"/>
+       <img src="../images/2022-06-13-Java 내장 객체 (Webmarket 구현-3)/image-20220613180320544.png"/>
      </div>
    </details>
 
