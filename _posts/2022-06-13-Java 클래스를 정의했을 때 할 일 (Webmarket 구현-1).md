@@ -1,16 +1,21 @@
+---
+layout: single
+title: "클래스를 정의했을 때 할 일 (Webmarket 구현-2)" #글 제목
+categories: Java #글이 담길 폴더(대목차)
+tag: [Inheritance, Instance, Class, Encapsulation, Overload] #태그 넣어주기
+toc: true #블로그 포스트 화면 오른쪽 목차
+author_profile: false #블로그 포스트 화면 왼쪽 프로필 보여주기
+---
+
 # Java 클래스를 정의했을 때 할 일
 
-
-
-**순서** 
+**순서**
 
 1. **모델객체 만들고**
 
 2. 기능제공하는 레파지토리 만들고
 
 3. 화면에 뿌린다. (jsp)
-
-   
 
    <details>
      <summary style="font-Weight : bold; font-size : 15px; color : #E43914;" >실습 목표</summary>
@@ -19,17 +24,11 @@
      </div>
    </details>
 
-   
+---
 
-------
+_자바의 철학 : 현실세계와 맞춘다._
 
-
-
-*자바의 철학 : 현실세계와 맞춘다.*
-
-*고로 이 5가지 과정을 거친다.*
-
-
+_고로 이 5가지 과정을 거친다._
 
 1. **무지성 private 멤버 변수**
 2. **필요하면 생성자 추가**
@@ -37,20 +36,11 @@
 4. **무지성 toString()**
 5. **필요하면 equals / hashCode 재정의(오버라이드)**
 
-  
-
-
 **<이클립스 우클릭 Source 기능 활용하기(Alt+Shift+S)>**
 
 ![이클립스 우클릭 소스](../images/2022-06-13-Java 클래스를 정의했을 때 할 일/이클립스 우클릭 소스.png)
 
-  
-  
-
-
 ## 모델객체 만들기
-
-
 
 ![image-20220613092723147](../images/2022-06-13-Java 클래스를 정의했을 때 할 일/image-20220613092723147.png)
 
@@ -64,11 +54,6 @@ jsp를 활용하여 웹페이지를 만들 때,
 
 product.java 에 모든 상품을 객체로 담는다.
 
-  
-  
-
-
-
 ### 1. 무지성 private 멤버 변수
 
 **객체를 만들 때 정석은 객체의 속성을 모두 다 private으로 설정하는 것.**
@@ -77,7 +62,7 @@ product.java 에 모든 상품을 객체로 담는다.
 package com.webmarket.domain.model;
 
 public class Product {
-	
+
 	private String id;
 	private String name;
 	private String unitPrice;
@@ -86,32 +71,31 @@ public class Product {
 	private String category;
 	private long unitsInStock;
 	private String condition;
-	
+
 }
 ```
 
-​    
-
+​
 
 #### ❗클래스와 메인메소드(클래스)와의 관계
 
 **클래스와 메인메소드는 아무런 관계가 없다.**
-	그럼 class main안에 메인메소드를 왜 넣을까??
+그럼 class main안에 메인메소드를 왜 넣을까??
 
 👉 자바의 룰로, 메인메소드는 어떠한 클래스 안에 넣어야한다. (아무데나가능)
-	그러므로 밑의 변수들에 접근을 할 수 없다.
+그러므로 밑의 변수들에 접근을 할 수 없다.
 
 ```java
 package com.webmarket.domain.model;
 
 public class Product {
-	
+
 	public static void main(String[] args) {
 // Product product = new Product();
 		name = "ddd"; // 밑 변수들과 상관이 없으므로 가져올 수 없다.
 		id = "110";	// 변수 id는 static이므로 가져올 수 있다.
 	}
-	
+
 	private static String id;
 	private String name;
 	private String unitPrice;
@@ -120,7 +104,7 @@ public class Product {
 	private String category;
 	private long unitsInStock;
 	private String condition;
-	
+
 }
 ```
 
@@ -140,14 +124,14 @@ public class Product {
 
 ```java
 public class Product {
-	
+
 	public static void main(String[] args) {
 		Product product = new Product();
 		Product product2 = new Product();
 		product.id = "100";
 		//product2.id = ? //"100"
 	}
-	
+
 	private static String id;
 	private String name;
 	private String unitPrice;
@@ -156,16 +140,12 @@ public class Product {
 	private String category;
 	private long unitsInStock;
 	private String condition;
-	
+
 }
 
 ```
 
-이때 두 product와 product2는 같은  static(정적데이터)를 보고 있으므로 product2.id 도 "100"이다.
-
-  
-  
-
+이때 두 product와 product2는 같은 static(정적데이터)를 보고 있으므로 product2.id 도 "100"이다.
 
 ### 2. 필요하면 생성자 추가
 
@@ -185,21 +165,13 @@ public class Product {
 
 ![image-20220613152520699](../images/2022-06-13-Java 클래스를 정의했을 때 할 일 (Webmarket 구현-1)/image-20220613152520699.png)
 
-※이때 같이 생기는 super(); 는 상속 해온 부모 클래스의  
+※이때 같이 생기는 super(); 는 상속 해온 부모 클래스의
 
 (현재 지정한 부모 클래스가 없으므로 최상위 클래스(디폴트)인 Object 클래스이다.)
 
-
-
-
-
-  
-  
-
-
 ### 3. 무지성 getter / setter
 
-*자바 개발자의 철학 : 우리는 getter setter를 통해서만 멤버 변수에 접근을 할거야.*
+_자바 개발자의 철학 : 우리는 getter setter를 통해서만 멤버 변수에 접근을 할거야._
 
 ![image-20220613095144121](../images/2022-06-13-Java 클래스를 정의했을 때 할 일/image-20220613095144121.png)
 
@@ -210,12 +182,6 @@ public class Product {
 논리적으로 말이 안되는 것들을 막아 실수 범위를 줄인다.
 
 읽기 전용, 쓰기 전용 만드는 것.
-
-
-
-
-
-
 
 ### 4. 무지성 toString()
 
@@ -234,8 +200,6 @@ public String toString() {
 }
 ```
 
-
-
 만든 인스턴스를 출력해보면..
 
 ```java
@@ -246,21 +210,13 @@ public String toString() {
 	}
 ```
 
-
-
 해당 인스턴스의 hashCode가 보인다. 👉 3d012ddd
 
 ![image-20220613101029912](../images/2022-06-13-Java 클래스를 정의했을 때 할 일/image-20220613101029912.png)
 
-
-
 toString()을 만들어 주었을 때 출력 화면 :
 
 ![image-20220613100841587](../images/2022-06-13-Java 클래스를 정의했을 때 할 일/image-20220613100841587.png)
-
-
-
-
 
 ```java
 System.out.println(product == product2); // false
@@ -268,13 +224,9 @@ System.out.println(product == product2); // false
 
 이때 false인 이유는 각 인스턴스의 해쉬코드도 다르고, 동적 데이터로 만들어진 두 인스턴스.
 
-객체 비교를 할 때에는 equals() 함수가 필요하다. 하지만 Object 클래스의 equals 기능으로는 두 객체를 비교할 수  없다.
+객체 비교를 할 때에는 equals() 함수가 필요하다. 하지만 Object 클래스의 equals 기능으로는 두 객체를 비교할 수 없다.
 
-그러므로 equals() 재정의를 통해 두 객체의 동등한 비교를 할 수 있도록 만들어준다. 
-
-
-
-
+그러므로 equals() 재정의를 통해 두 객체의 동등한 비교를 할 수 있도록 만들어준다.
 
 +a
 
@@ -291,14 +243,6 @@ System.out.println(new String("name") == new String("name")); // false
 ```
 
 물론, 이때 jvm의 코드 재사용으로 간혹 true가 나올 수 있다고 한다.
-
-
-
-
-
-
-
-
 
 ### 5. 필요하면 equals / hashCode 재정의(오버라이드)
 
@@ -336,9 +280,7 @@ hashCode도 맞춰주자. 👉 hashCode 재정의
 
 쌍둥이 둘은 태어났는데 똑같이 생겼으면 같은 애야 - > equals() 재정의
 
- ![image-20220613104051072](../images/2022-06-13-Java 클래스를 정의했을 때 할 일/image-20220613104051072.png)
-
-
+![image-20220613104051072](../images/2022-06-13-Java 클래스를 정의했을 때 할 일/image-20220613104051072.png)
 
 하지만
 
@@ -350,11 +292,6 @@ System.out.println(product == product2);// false
 ![인스턴스1,2 비교](../images/2022-06-13-Java 클래스를 정의했을 때 할 일 (Webmarket 구현-1)/인스턴스1,2 비교.png)
 
 그러므로 java에서 객체 비교는 언제나 equals() 로 한다.
-
-
-  
-    
-
 
 ### 🔎Object클래스란?
 
@@ -368,26 +305,14 @@ F4를 눌러 Type Hierachy를 보았을 때 Object에서 상속받아온 것을 
 
 **결국 extends Object가 생략되어 있다고 볼 수 있는것이다.**
 
-
-
 ![image-20220613102356147](../images/2022-06-13-Java 클래스를 정의했을 때 할 일/image-20220613102356147.png)
 
 그러므로 11번 라인의 코드는 오류가 나지 않는다. 이것이 다형성 원리.
 
 java에서 모든 클래스는 Object클래스를 상속받음.
 
-
-
-
-
-
-
 ~~ 위 기본 설정들이 요즘 언어(kotlin)에서는 한줄로 표현이 된다구?! ~~
-
-  
-  
 
 ### ❓ 의문점
 
-1. 결국 super(name)과  Object(name) 은 같은 것인가?
-
+1. 결국 super(name)과 Object(name) 은 같은 것인가?

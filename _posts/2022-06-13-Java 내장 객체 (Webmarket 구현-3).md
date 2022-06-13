@@ -1,16 +1,21 @@
+---
+layout: single
+title: "Java 내장객체 (Webmarket 구현-3)" #글 제목
+categories: Java #글이 담길 폴더(대목차)
+tag: [Bean, Jsp] #태그 넣어주기
+toc: true #블로그 포스트 화면 오른쪽 목차
+author_profile: false #블로그 포스트 화면 왼쪽 프로필 보여주기
+---
+
 # 내장 객체
 
-
-
-**순서** 
+**순서**
 
 1. 모델객체 만들고
 
 2. 기능제공하는 레파지토리 만들고
 
 3. **화면에 뿌린다. (jsp)**
-
-   
 
    <details>
      <summary style="font-Weight : bold; font-size : 15px; color : #E43914;" >실습 목표</summary>
@@ -19,11 +24,8 @@
        <img src="../images/2022-06-13-Java 내장 객체 (Webmarket 구현-3)/image-20220613145600602.png"/>
      </div>
    </details>
-   
-   
-   
 
-------
+---
 
 ## 3. 화면에 뿌리기 위한 Jsp 만들기
 
@@ -34,8 +36,6 @@ jsp 파일은 일반적으로 webapp 폴더에 넣는다.
 <br>
 
 <br>
-
- 
 
 ### 상품 목록 화면 만들기
 
@@ -91,7 +91,7 @@ public List<Product> getAllProducts() {
 		</div>
 ```
 
-받은 값을 바로 출력해주는 기능의 "**<%=	%>**"
+받은 값을 바로 출력해주는 기능의 "**<%= %>**"
 
 <br>
 
@@ -127,8 +127,3 @@ list를 Stream으로 데이터의 흐름.
 **<출력 화면>**
 
 ![image-20220613163802693](../images/2022-06-13-Java 내장 객체 (Webmarket 구현-3)/image-20220613163802693.png)
-
-
-
-
-

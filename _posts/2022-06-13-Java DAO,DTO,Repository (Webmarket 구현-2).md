@@ -1,8 +1,15 @@
+---
+layout: single
+title: "Java DAO,DTO,Repository (Webmarket 구현-2)" #글 제목
+categories: Java #글이 담길 폴더(대목차)
+tag: [List, ArrayList] #태그 넣어주기
+toc: true #블로그 포스트 화면 오른쪽 목차
+author_profile: false #블로그 포스트 화면 왼쪽 프로필 보여주기
+---
+
 # Java DAO,DTO,Repository
 
-
-
-**순서** 
+**순서**
 
 1. 모델객체 만들고
 
@@ -10,20 +17,14 @@
 
 3. 화면에 뿌린다. (jsp)
 
-   
-
    <details>
      <summary style="font-Weight : bold; font-size : 15px; color : #E43914;" >실습 목표</summary>
      <div>
        <img src="../images/2022-06-13-Java 클래스를 정의했을 때 할 일/image-20220613093044400.png"/>
      </div>
    </details>
-   
-   
 
-------
-
-
+---
 
 dto data transfer object
 
@@ -35,17 +36,11 @@ product를 제공하고 별도로 뿌려주는 클래스를 만들자.
 
 일반적으로 ~Repository 자바 파일명을 설정해준다.
 
-
-
 이 파일은 products의 데이터들을 받는다. 이때 어떤 데이터 구조로 받을 것인가?
 
 List or ArrayList?
 
 ![image-20220613110759474](../images/2022-06-13-Java DAO,DTO,Repository/image-20220613110759474.png)
-
-
-
-
 
 ### List와 ArrayList
 
@@ -57,7 +52,7 @@ Next에 다음 데이터의 레퍼런스 저장. 주소를 가리킴.
 
 항상 삽입과 삭제의 속도가 동일하다.
 
-데이터를 삽입 했을 때, (내장함수에서) 전자 A와 C의 Node값을 지정해줘 링크연결을 한다. 
+데이터를 삽입 했을 때, (내장함수에서) 전자 A와 C의 Node값을 지정해줘 링크연결을 한다.
 
 B데이터를 삭제했을 때 전자의 넥스트에서 C데이터를 가리키도록 주소만 바꾸면 됨.
 
@@ -65,13 +60,11 @@ B데이터를 삭제했을 때 전자의 넥스트에서 C데이터를 가리키
 
 #### 요약
 
-삽입, 삭제가 빈번할 떄 항상 동일 성능. but  ArrayList보다 검색이 느리다.
+삽입, 삭제가 빈번할 떄 항상 동일 성능. but ArrayList보다 검색이 느리다.
 
 메모리 조금 더 많이 먹는다. (Node값 두개 지정)
 
-
-
-### 동적배열(Array) 
+### 동적배열(Array)
 
 ArrayList는 일반적으로 배열(Array)와 같다고 볼 수 있다.
 
@@ -91,19 +84,11 @@ Array에서 만약 0번 index 값을 삭제했을 때,
 
 내부적으로 배열이라 성능이 일단 빠르다.
 
-
-
 리스트(상위 개념) 구조에 포함되는 것들. 각각의 기능들이 있으므로 적재적소에 맞는 리스트를 쓰자.
 
 ![image-20220613111012239](../images/2022-06-13-Java DAO,DTO,Repository/image-20220613111012239.png)
 
 <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html">출처 : https://docs.oracle.com/javase/8/docs/api/java/util/List.html</a></a>
-
-
-
-
-
-
 
 자료구조를 선택했다면, 예를 들어 sort 기능을 만들면
 
@@ -122,18 +107,6 @@ sort(products);
 		Stack stack = (Stack) sort(products2);
 ```
 
-
-
-
-
-
-
-
-
-
-
-
-
 ### ❓ 의문점
 
 1. List\<product> products = new LinkedList<>();
@@ -143,14 +116,6 @@ sort(products);
    여기서 앞에는 List, 뒤에는 LinkedList 어쩔때는 뒤가 ArrayList, 앞이 List.
 
    무슨 차이일까?
-
-
-
-
-
-
-
-
 
 <br>
 
@@ -167,10 +132,3 @@ sort(products);
 > 캡슐화 : https://www.geeksforgeeks.org/types-of-linked-list/
 >
 > 인스턴스 : https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=justkukaro&logNo=220396540585
-
-
-
-
-
-
-
