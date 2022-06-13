@@ -115,7 +115,7 @@ sort(products);
 
    여기서 앞에는 List, 뒤에는 LinkedList 어쩔때는 뒤가 ArrayList, 앞이 List.
 
-   무슨 차이일까?
+   무슨 차이일까? 
 
 <br>
 
