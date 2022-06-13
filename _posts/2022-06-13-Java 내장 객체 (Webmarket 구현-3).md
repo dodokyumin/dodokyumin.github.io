@@ -1,3 +1,12 @@
+---
+layout: single
+title: "Java 내장 객체 (Webmarket 구현-3)" #글 제목
+categories: Java #글이 담길 폴더(대목차)
+tag: [Bean, Jsp] #태그 넣어주기
+toc: true #블로그 포스트 화면 오른쪽 목차
+author_profile: false #블로그 포스트 화면 왼쪽 프로필 보여주기
+---
+
 # 내장 객체
 
 **순서**
@@ -11,8 +20,8 @@
    <details>
      <summary style="font-Weight : bold; font-size : 15px; color : #E43914;" >실습 목표</summary>
      <div>
-       <img src="../images/2022-06-13-Java 내장 객체 (Webmarket 구현-3)/image-20220613180304121.png"/>
-       <img src="../images/2022-06-13-Java 내장 객체 (Webmarket 구현-3)/image-20220613180320544.png"/>
+       <img src="images/2022-06-13-Java 내장 객체 (Webmarket 구현-3)/image-20220613180304121.png"/>
+       <img src="images/2022-06-13-Java 내장 객체 (Webmarket 구현-3)/image-20220613180320544.png"/>
      </div>
    </details>
 
