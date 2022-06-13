@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "클래스를 정의했을 때 할 일 (Webmarket 구현-2)" #글 제목
+title: "클래스를 정의했을 때 할 일 (Webmarket 구현-1)" #글 제목
 categories: Java #글이 담길 폴더(대목차)
 tag: [Inheritance, Instance, Class, Encapsulation, Overload] #태그 넣어주기
 toc: true #블로그 포스트 화면 오른쪽 목차
@@ -74,8 +74,6 @@ public class Product {
 
 }
 ```
-
-
 
 #### ❗클래스와 메인메소드(클래스)와의 관계
 
@@ -161,7 +159,7 @@ public class Product {
 
 #### 👉오버로드 :
 
-**클래스와 똑같은 이름의 생성자나 메소드를 여러개 만들어 파라미터를 달리 받는 것 .** 
+**클래스와 똑같은 이름의 생성자나 메소드를 여러개 만들어 파라미터를 달리 받는 것 .**
 
 ![image-20220613152520699](../images/2022-06-13-Java 클래스를 정의했을 때 할 일 (Webmarket 구현-1)/image-20220613152520699.png)
 
