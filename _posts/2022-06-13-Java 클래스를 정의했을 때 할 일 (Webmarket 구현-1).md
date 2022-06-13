@@ -3,8 +3,6 @@ layout: single
 title: "클래스를 정의했을 때 할 일 (Webmarket 구현-1)" #글 제목
 categories: Java #글이 담길 폴더(대목차)
 tag: [Inheritance, Instance, Class, Encapsulation, Overload] #태그 넣어주기
-# toc: true #블로그 포스트 화면 오른쪽 목차
-# author_profile: false #블로그 포스트 화면 왼쪽 프로필 보여주기
 ---
 
 # Java 클래스를 정의했을 때 할 일
