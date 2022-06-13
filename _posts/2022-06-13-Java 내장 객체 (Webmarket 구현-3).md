@@ -20,8 +20,8 @@ author_profile: false #블로그 포스트 화면 왼쪽 프로필 보여주기
    <details>
      <summary style="font-Weight : bold; font-size : 15px; color : #E43914;" >실습 목표</summary>
      <div>
-       <img src="../images/2022-06-13-Java 클래스를 정의했을 때 할 일/image-20220613163111862.png"/>
-       <img src="../images/2022-06-13-Java 내장 객체 (Webmarket 구현-3)/image-20220613163802693.png"/>
+       <img src="../images/2022-06-13-Java 내장 객체 (Webmarket 구현-3)/image-20220613163111862"/>
+       <img src="../images/2022-06-13-Java 내장 객체 (Webmarket 구현-3)/image-20220613163802693"/>
      </div>
    </details>
 
@@ -31,7 +31,7 @@ author_profile: false #블로그 포스트 화면 왼쪽 프로필 보여주기
 
 jsp 파일은 일반적으로 webapp 폴더에 넣는다.
 
-![image-20220613112543937](../images/2022-06-13-Java 내장 객체 (Webmarket 구현-3)/image-20220613112543937.png)
+![image-20220613112543937](../images/2022-06-13-Java 내장 객체 (Webmarket 구현-3)/image-20220613112543937-16551095674444.png)
 
 <br>
 
@@ -97,7 +97,7 @@ public List<Product> getAllProducts() {
 
 **<출력 화면>**
 
-![image-20220613163111862](../images/2022-06-13-Java 내장 객체 (Webmarket 구현-3)/image-20220613163111862.png)
+![ㅍ](../images/2022-06-13-Java 내장 객체 (Webmarket 구현-3)/image-20220613163111862-16551096159195.png)
 
 <br>
 
