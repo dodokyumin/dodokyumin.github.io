@@ -3,6 +3,7 @@ title: "Java 내장 객체 (Webmarket 구현-3)" #글 제목
 categories: Java #글이 담길 폴더(대목차)
 tag: [Bean, Jsp] #태그 넣어주기
 toc: true #블로그 포스트 화면 오른쪽 목차
+author_profile: true #블로그 포스트 화면 왼쪽 프로필 보여주기
 ---
 
 # 내장 객체
