@@ -97,7 +97,7 @@ Array에서 만약 0번 index 값을 삭제했을 때,
 
 ![image-20220613111012239](../images/2022-06-13-Java DAO,DTO,Repository/image-20220613111012239.png)
 
-https://docs.oracle.com/javase/8/docs/api/java/util/List.html
+<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html">출처 : https://docs.oracle.com/javase/8/docs/api/java/util/List.html</a></a>
 
 
 
@@ -113,24 +113,14 @@ https://docs.oracle.com/javase/8/docs/api/java/util/List.html
 	}
 ```
 
+<br>
 
+🔽만약 나는 List 에서 stack을 사용하고 싶어. 그러면 사용자가 Stack으로 형 변형을 해줄 수 있다.
 
 ```java
 sort(products);
 		Stack stack = (Stack) sort(products2);
 ```
-
-만약 나는 List 하위 개념인 stack을 사용하고 싶어. 그러면 Stack으로 형 변형을 해줄 수 있다.
-
-
-
-
-
-## 3. 화면에 뿌리기 위한 Jsp 만들기
-
-![image-20220613112543937](../images/2022-06-13-Java DAO,DTO,Repository/image-20220613112543937.png)
-
-
 
 
 
@@ -162,11 +152,23 @@ sort(products);
 
 
 
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+## References
+
+> 캡슐화 : https://www.geeksforgeeks.org/types-of-linked-list/
+>
+> 인스턴스 : https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=justkukaro&logNo=220396540585
 
 
-https://www.geeksforgeeks.org/types-of-linked-list/
-
-https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=justkukaro&logNo=220396540585
 
 
 
