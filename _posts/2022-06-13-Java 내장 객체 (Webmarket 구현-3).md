@@ -1,5 +1,6 @@
 ---
 layout: single
+title: "Java 내장 객체 (Webmarket 구현-3)" #글 제목
 categories: Java #글이 담길 폴더(대목차)
 tag: [Bean, Jsp] #태그 넣어주기
 toc: true #블로그 포스트 화면 오른쪽 목차
@@ -19,8 +20,8 @@ author_profile: false #블로그 포스트 화면 왼쪽 프로필 보여주기
    <details>
      <summary style="font-Weight : bold; font-size : 15px; color : #E43914;" >실습 목표</summary>
      <div>
-       <img src="C:\projects\dodokyumin-github-blog\dodokyumin.github.io\images\2022-06-13-Java 내장 객체 (Webmarket 구현-3)\image-20220613163111862-16551096159195.png"/>
-       <img src="C:\projects\dodokyumin-github-blog\dodokyumin.github.io\images\2022-06-13-Java 내장 객체 (Webmarket 구현-3)\image-20220613163802693.png"/>
+       <img src="../images/2022-06-13-Java 내장 객체 (Webmarket 구현-3)/image-20220613180304121.png"/>
+       <img src="../images/2022-06-13-Java 내장 객체 (Webmarket 구현-3)/image-20220613180320544.png"/>
      </div>
    </details>
 
@@ -30,7 +31,7 @@ author_profile: false #블로그 포스트 화면 왼쪽 프로필 보여주기
 
 jsp 파일은 일반적으로 webapp 폴더에 넣는다.
 
-![image-20220613112543937](C:\projects\dodokyumin-github-blog\dodokyumin.github.io\images\2022-06-13-Java 내장 객체 (Webmarket 구현-3)\image-20220613112543937-16551095674444.png)
+![image-20220613180241282](../images/2022-06-13-Java 내장 객체 (Webmarket 구현-3)/image-20220613180241282.png)
 
 <br>
 
@@ -96,7 +97,7 @@ public List<Product> getAllProducts() {
 
 **<출력 화면>**
 
-![](C:\projects\dodokyumin-github-blog\dodokyumin.github.io\images\2022-06-13-Java 내장 객체 (Webmarket 구현-3)\image-20220613163111862-16551096159195.png)
+![image-20220613180304121](../images/2022-06-13-Java 내장 객체 (Webmarket 구현-3)/image-20220613180304121.png)
 
 <br>
 
@@ -125,4 +126,4 @@ list를 Stream으로 데이터의 흐름.
 
 **<출력 화면> **
 
-![image-20220613163802693](C:\projects\dodokyumin-github-blog\dodokyumin.github.io\images\2022-06-13-Java 내장 객체 (Webmarket 구현-3)\image-20220613163802693.png)
+![image-20220613180320544](../images/2022-06-13-Java 내장 객체 (Webmarket 구현-3)/image-20220613180320544.png)
