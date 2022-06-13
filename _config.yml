@@ -102,7 +102,7 @@ analytics:
 # Site Author
 author:
   name: "KYUMIN HONG"
-  avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar: "/assets/hongkyumin.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio: "매일매일 성장하는 예비 개발자."
   location: "REPUBLIC OF KOREA, Seoul"
   email:
