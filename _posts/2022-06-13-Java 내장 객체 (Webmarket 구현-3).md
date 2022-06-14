@@ -117,4 +117,4 @@ list를 Stream으로 데이터의 흐름.
 
 **<출력 화면> **
 
-![image-20220613180320544](../images/2022-06-13-Java 내장 객체 (Webmarket 구현-3)/image-20220613180320544.png)
+![2](../images/2022-06-13-Java 내장 객체 (Webmarket 구현-3)/2.png)
