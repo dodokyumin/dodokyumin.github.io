@@ -22,7 +22,7 @@
 
 jsp 파일은 일반적으로 webapp 폴더에 넣는다.
 
-![image-20220613180241282](../images/2022-06-13-Java 내장 객체 (Webmarket 구현-3)/image-20220613180241282.png)
+![3](../images/2022-06-13-Java 내장 객체 (Webmarket 구현-3)/3.png)
 
 <br>
 
@@ -88,7 +88,7 @@ public List<Product> getAllProducts() {
 
 **<출력 화면>**
 
-![image-20220613180304121](../images/2022-06-13-Java 내장 객체 (Webmarket 구현-3)/image-20220613180304121.png)
+![1](../images/2022-06-13-Java 내장 객체 (Webmarket 구현-3)/1.png)
 
 <br>
 
