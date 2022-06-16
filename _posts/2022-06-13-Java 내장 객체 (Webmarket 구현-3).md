@@ -1,3 +1,12 @@
+---
+layout: single
+title: "Java 내장 객체 (Webmarket 구현-3)"
+categories: Java
+tag: [Jsp, Bootstrap]
+toc: true
+author_profile: false
+---
+
 # 내장 객체
 
 **순서**
