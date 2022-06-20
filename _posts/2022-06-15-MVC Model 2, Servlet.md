@@ -11,13 +11,13 @@ author_profile: false
 
 모델1:
 
-![image-20220615162631679](../images/2022-06-15-2/image-20220615162631679.png?raw=true)
+![image-20220615162631679](../images/2022-06-15-2/image-20220615162631679.png)
 
 모델 2:
 
 jsp에서 java코드, 로직들을 싹다 view에서 conroller로 옮겨 담아 관리
 
-![image-20220615162604638](../images/2022-06-15-2/image-20220615162604638.png?raw=true)
+![image-20220615162604638](../images/2022-06-15-2/image-20220615162604638.png)
 
 ## MVC Model 2, Servlet
 
