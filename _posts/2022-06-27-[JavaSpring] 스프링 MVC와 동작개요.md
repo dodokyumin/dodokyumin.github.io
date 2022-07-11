@@ -8,6 +8,22 @@ war로 하여야 웹 어플리케이션 구동 가ㅣ능.
 
 Maven은 자바 프로젝트의 빌드(build)를 자동화 해주는 빌드 툴이다.
 
+라이브러리를 관리해주는, 의존성 관리 툴.
+
+![image-20220708111910509](../images/2022-06-27-220627강의 필기/image-20220708111910509.png)
+
+![image-20220708111739394](../images/2022-06-27-220627강의 필기/image-20220708111739394.png)
+
+maven에서 라이브러리 관리하기.
+
+pom.xml에 \<dependency>를 적어주는 것 만으로
+
+PC에 설치를 해주고, BuildPath에 넣어준다.
+
+<img src="../images/2022-06-27-220627강의 필기/image-20220708112208843.png" alt="image-20220708112208843" style="zoom: 67%;" />
+
+mvn코드를 쉽게 얻을 수 있는 mvn repository
+
 
 
 ![image-20220627112029654](../images/Untitled/image-20220627112029654.png)
@@ -36,11 +52,13 @@ class HelloController가
 
 4. **컨트롤러로 전송 및, 컨트롤러 명령을 받아 실행할 service(CRUD 및 비즈니스 로직)**
 
+컨드롤러가 하는 일 두가지 : 모델세팅, view지정
+
 5. **controller는 비즈니스 로직을 통해 받은 데이터를 view name ("hello")를 통해 리턴한다.**
 
 6. **view를 어디로 보낼지 찾는  View Resolver**
 
-   ![image-20220627124731981](../images/Untitled/image-20220627124731981.png)
+![image-20220627124731981](../images/Untitled/image-20220627124731981.png)
 
 application.properies 파일의\
 
@@ -73,6 +91,8 @@ ${key}
 ```
 
 model 안의 해당 key에 접근하여 value 값을 얻을 수 있다.
+
+$는 모델에서 값을 가져오겠다는 것.
 
 
 
