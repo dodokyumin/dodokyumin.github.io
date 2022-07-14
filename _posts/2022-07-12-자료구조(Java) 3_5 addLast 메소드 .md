@@ -2,7 +2,7 @@
 
 Linked List 맨 뒤에 요소를 추가하는 경우
 
-![image-20220714181404978](../images/2022-07-12-자료구조(Java) 3_5 addLast 메소드 /image-20220714181404978.png)
+![image-20220714181404978](../images/2022-07-14-자료구조(Java) 3_5 addLast 메소드 /image-20220714181404978.png)
 
 새로운 노드 D를 추가할 때, head에서부터 올라가는 것은
 
@@ -22,7 +22,7 @@ head.next.next.next... = node
 
 **HOW?**
 
-![image-20220714182213502](../images/2022-07-12-자료구조(Java) 3_5 addLast 메소드 /image-20220714182213502.png)
+![image-20220714182213502](../images/2022-07-14-자료구조(Java) 3_5 addLast 메소드 /image-20220714182213502.png)
 
 1️⃣ 임시포인터(tmp)를 만들어 head 부터 가리키기 시작한다.
 
@@ -91,7 +91,7 @@ tmp는 범위를 벗어나며 가비지 컬렉션(Garbage Collection)이 된다.
 
 #### 만약 리스트가 비어있고 head가 null을 가리킨다면?
 
-![image-20220714192106947](../images/2022-07-12-자료구조(Java) 3_5 addLast 메소드 /image-20220714192106947.png)
+![image-20220714192106947](../images/2022-07-14-자료구조(Java) 3_5 addLast 메소드 /image-20220714192106947.png)
 
 ```java
 Node<E> tmp = head; //head값이 null, tmp도 null을 가리키게 됨
@@ -145,7 +145,7 @@ public void addLast(E obj){
 
 #### tail 포인터 사용하기
 
-![image-20220714200046526](../images/2022-07-12-자료구조(Java) 3_5 addLast 메소드 /image-20220714200046526.png)
+![image-20220714200046526](../images/2022-07-14-자료구조(Java) 3_5 addLast 메소드 /image-20220714200046526.png)
 
 tail 이라는 새로운 포인터를 만들고 반대쪽 끝에 둔다면,
 
@@ -174,7 +174,7 @@ public void addLast(E obj){
 
 head가 null일 때 tail도 마찬가지로 null이기 때문에,
 
-![image-20220714200544497](../images/2022-07-12-자료구조(Java) 3_5 addLast 메소드 /image-20220714200544497.png)
+![image-20220714200544497](../images/2022-07-14-자료구조(Java) 3_5 addLast 메소드 /image-20220714200544497.png)
 
 ```java
 head=node;
