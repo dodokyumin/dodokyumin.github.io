@@ -26,7 +26,7 @@ mvn코드를 쉽게 얻을 수 있는 mvn repository
 
 
 
-<img src="../images/Untitled/image-20220627112029654.png" alt="image-20220627112029654" style="zoom: 200%;" />
+<img src="../images/Untitled/image-20220627112029654.png" alt="image-20220627112029654" style="zoom: 400%;" />
 
 @Service(ex 페이지네이션)
 
