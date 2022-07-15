@@ -2,7 +2,7 @@
 
 Linked List 맨 뒤에 요소를 추가하는 경우
 
-![image-20220714181404978](../images/2022-07-14-자료구조(Java) 3_5 addLast 메소드 /image-20220714181404978.png)
+![image-20220714181404978](../images/2022-07-12-자료구조(Java) 3_5 addLast 메소드 /image-20220714181404978.png)
 
 새로운 노드 D를 추가할 때, head에서부터 올라가는 것은
 
@@ -22,7 +22,7 @@ head.next.next.next... = node
 
 **HOW?**
 
-![image-20220714182213502](../images/2022-07-14-자료구조(Java) 3_5 addLast 메소드 /image-20220714182213502.png)
+![image-20220714182213502](../images/2022-07-12-자료구조(Java) 3_5 addLast 메소드 /image-20220714182213502.png)
 
 1️⃣ 임시포인터(tmp)를 만들어 head 부터 가리키기 시작한다.
 

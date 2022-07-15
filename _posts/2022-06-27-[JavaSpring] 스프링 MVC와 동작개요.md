@@ -26,7 +26,13 @@ mvn코드를 쉽게 얻을 수 있는 mvn repository
 
 
 
-![image-20220627112029654](../images/Untitled/image-20220627112029654.png)
+<img src="../images/Untitled/image-20220627112029654.png" alt="image-20220627112029654" style="zoom: 200%;" />
+
+@Service(ex 페이지네이션)
+
+@Repository => hibernate나 mybatis로 crud 구현
+
+@Controller
 
 1. **주소창의 http를 통한 Request**
 
